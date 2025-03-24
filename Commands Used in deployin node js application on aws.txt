@@ -1,0 +1,22 @@
+# Connect to EC2 Instance
+ssh -i your-key.pem ubuntu@your-ec2-public-ip
+
+# Update System
+sudo apt update && sudo apt upgrade -y
+
+# Install Node.js, npm, and Git
+sudo apt install -y nodejs npm git
+
+# Clone Project
+git clone https://github.com/your-repo.git
+cd your-repo
+
+# Create .env file
+touch .env
+echo "# Add your environment variables here" > .env
+
+# Install Dependencies
+npm install
+
+# Start Application
+node index.js
